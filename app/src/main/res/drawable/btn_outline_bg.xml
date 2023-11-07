@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:attr/colorControlHighlight">
+    <!-- Background shape with transparent fill color -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" /> <!-- Transparent fill color -->
+            <corners android:radius="5dp" /> <!-- Radius of the rounded corners, adjust as needed -->
+            <stroke
+                android:color="@color/design_default_color_primary"
+                android:width="1dp" /> <!-- Outline width, adjust as needed -->
+        </shape>
+    </item>
+
+    <!-- Ripple effect mask -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="#f3f3f3" /> <!-- Ripple color, use the system default -->
+            <corners android:radius="16dp" /> <!-- Radius of the rounded corners, adjust as needed -->
+        </shape>
+    </item>
+</ripple>

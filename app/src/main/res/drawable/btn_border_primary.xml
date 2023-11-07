@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:attr/colorControlHighlight"> <!-- Ripple color, use the system default -->
+
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/design_default_color_primary" /> <!-- Background color of the button -->
+            <corners android:radius="5dp" /> <!-- Radius of the rounded corners, adjust as needed -->
+        </shape>
+    </item>
+
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="?android:attr/colorPrimary" /> <!-- Mask color, use the system default -->
+            <corners android:radius="16dp" /> <!-- Radius of the rounded corners, adjust as needed -->
+        </shape>
+    </item>
+
+</ripple>
